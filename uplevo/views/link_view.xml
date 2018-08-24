@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="link_act_view" model="ir.actions.act_window">
+            <field name="name">linkactview</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">uplevo.link</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

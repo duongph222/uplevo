@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="sale_act_view" model="ir.actions.act_window">
+            <field name="name">sale</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.orders</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="sal_form_view" model="ir.ui.view">
+            <field name="name">sale</field>
+            <field name="model">sale.orders</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//button[@name='action_quotation_send']" position="after">
+                    <button name="share_file" type="object" string="Share file" class="oe_highlight"/>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>
